@@ -1,0 +1,13 @@
+<nav>
+        <a class="logomain" href="index.html"><img class="logo" src="/images/logo.png" alt="Site Logo">SPARK</a>
+        <ul class="nav-center">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="/#">Support</a></li>
+        </ul>
+        <ul class="nav-right">
+            <li><a target="_blank" href="/#"><i class="fa-brands fa-facebook-f"></i></a></li>
+            <li><a target="_blank"href="/#"><i class="fa-brands fa-youtube"></i></a></li>
+            <li><a target="_blank" href="/#"><i class="fa-brands fa-github"></i></a></li>
+            <li><a class="navbtn signbtn" href="#">Sign up</a></li>
+        </ul>
+    </nav>

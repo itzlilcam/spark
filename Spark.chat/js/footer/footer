@@ -1,0 +1,28 @@
+<footer>
+        <div class="top">
+            <div class="top-inner">
+                <p class="title">Community</p>
+                <a href="#">Spark</a>
+            </div>
+            <div class="top-inner">
+                <p class="title">Developers</p>
+                <a href="#">Github</a>
+                <a href="#">API</a>
+            </div>
+            <div class="top-inner">
+                <p class="title">Help</p>
+                <a href="#notavailable">Documentation</a>
+                <a href="#notavailable">FAQ</a>
+                <a href="#notavailable">Privacy Policy</a>
+                <a href="#notavailable">Contact Us</a>
+            </div>
+        </div>
+        <div class="bottom">
+            <p>© 2022</p>
+            <div>
+                <a target="_blank" class="nav-brand" href="/#"><i class="fa-brands fa-facebook-f"></i></a>
+                <a target="_blank" class="nav-brand" href="/#"><i class="fa-brands fa-youtube"></i></a>
+                <a target="_blank" class="nav-brand" href="/#"><i class="fa-brands fa-github"></i></a>
+            </div>
+        </div>
+    </footer>

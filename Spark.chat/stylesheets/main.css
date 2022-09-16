@@ -1,0 +1,235 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+:root {
+    --main1: #8AD3D9;
+
+    --discord-bg-main: #2c2f34;
+    --discord-bg-secondary: #202226;
+    --discord-white: white;
+    --discord-white-secondary: #babbbf;
+    --discord-blurple: #5865F2;
+    --discord-green: #57F287;
+    --discord-yellow: #FEE75C;
+    --discord-pink: #EB459E;
+    --discord-red: #ED4245;
+
+    --bg1: #040405;
+    --bg3: #14151b;
+    --bg4: #20212b;
+    --bg2: #0c0d10;
+
+    --badge-soon-main: rgb(97, 97, 56);
+    --badge-soon-secondary: rgb(228, 228, 63);
+    --badge-new-main: rgb(92, 53, 53);
+    --badge-new-secondary: rgb(219, 79, 79);
+    
+    --btn-main: #04040583;
+}
+
+body {
+    background-color: var(--discord-bg-main);
+}
+
+.badge {
+    font-size: .7rem;
+    padding: .3rem .5rem;
+    border: none;
+    border-radius: 5px;
+    margin: .3rem;
+}
+
+.badge-beta {
+    background-color: var(--main1);
+    color: var(--discord-white);
+}
+
+.logo {
+    height: 50px;
+}
+
+.logomain {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    color: var(--main1);
+    font-weight: 600;
+    font-size: 1.5rem;
+}
+
+nav {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 1rem;
+    background-color: var(--bg2);
+}
+
+.nav-center,
+.nav-right {
+    display: flex;
+}
+
+nav a {
+    font-size: 1rem;
+    padding: .5rem 1rem;
+    color: var(--discord-white);
+    font-weight: 500;
+    transition: 200ms;
+}
+
+.nav-center a:hover {
+    background-color: var(--btn-main);
+    transition: 200ms;
+    cursor: pointer;
+}
+
+.navbtn {
+    background-color: var(--main1);
+    color: var(--discord-white);
+    cursor: pointer;
+    padding: .5rem 1rem;
+    font-size: 1rem;
+    font-weight: 600;
+    border: none;
+    border-radius: 10px;
+}
+
+nav .fa-brands {
+    transition: 200ms;
+    padding: .5rem;
+}
+
+nav .fa-brands:hover {
+    color: var(--main1);
+    transition: 200ms;
+}
+
+/* Section: Hero */
+
+.section-hero {
+    display: flex;
+    align-items: center;
+    background-image: radial-gradient(circle at top center, var(--bg3), var(--bg2));
+    flex-direction: column;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    height: calc(100vh - 112px);
+    max-height: 1000px;
+    min-height: 532px;
+    padding: 10% 0;
+}
+
+.section-hero h1 {
+    color: var(--discord-white);
+    padding: 2rem 1rem;
+    font-size: 3rem;
+}
+
+.herobtn {
+    background-color: var(--btn-main);
+    color: var(--discord-white);
+    cursor: pointer;
+    padding: 1rem 2rem;
+    font-size: 1.2rem;
+    font-weight: 600;
+    border: none;
+    border-radius: 10px;
+}
+
+.section-hero .highlight {
+    color: var(--main1);
+}
+
+/* Footer */
+
+footer {
+    display: flex;
+    flex-direction: column;
+    margin: 2rem;
+    text-decoration: none;
+}
+
+footer .top {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: top;
+    margin-bottom: 2rem;
+}
+
+footer .top .title {
+    font-size: 1.2rem;
+    color: var(--discord-white);
+    font-weight: 600;
+}
+
+footer .top a {
+    font-size: 1.1rem;
+    color: var(--discord-white-secondary);
+    font-weight: 600;
+    text-decoration: none;
+    transition: 200ms;
+}
+
+footer .top a:hover {
+    color: var(--main1);
+    transition: 200ms;
+}
+
+footer .top-inner {
+    display: flex;
+    flex-direction: column;
+}
+
+footer .bottom {
+    display: flex;
+    justify-content: space-around;
+}
+
+footer .bottom a,
+footer .bottom p {
+    color: var(--discord-white-secondary);
+    font-size: 1rem;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+footer .bottom .fa-brands,
+footer .bottom .fa-solid {
+    font-size: 1.5rem;
+    padding: .5rem .7rem;
+    transition: 200ms;
+}
+
+footer .bottom .fa-brands:hover,
+footer .bottom .fa-solid:hover {
+    color: var(--main1);
+    transition: 200ms;
+}
+
+/* Devices Sizes */
+
+@media screen and (max-width: 720px) {
+    .nav-center {
+        display: none;
+    }
+    .section-hero {
+        max-height: 250px;
+    }
+    .section-hero h1 {
+        margin-top: 7%;
+        font-size: 1.5rem;
+    }
+    .section-hero .herobtn {
+        padding: .7rem 1rem;
+        font-size: 1rem;
+    }
+}
